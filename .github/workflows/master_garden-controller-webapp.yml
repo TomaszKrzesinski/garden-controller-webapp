@@ -51,6 +51,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'garden-controller-webapp'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_3b9fd4a6d770417d81333a9e5621eee8 }}
-        package: .
+        package: ./dist/garden-controller-webapp
